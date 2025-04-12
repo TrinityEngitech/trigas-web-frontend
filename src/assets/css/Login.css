@@ -1,0 +1,27 @@
+.btn-color {
+  background-color: #0e1c36;
+  color: #fff;
+  border: 2px solid #0e1c36;
+}
+.btn-color:hover {
+  border: 2px solid #0e1c36;
+  background: transparent;
+  color: #0e1c36;
+}
+.profile-image-pic {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.cardbody-color {
+  background-color: #ebf2fa;
+}
+
+a {
+  text-decoration: none;
+}
+#back a {
+  color: #0e1c36;
+  font-size: 16px;
+}

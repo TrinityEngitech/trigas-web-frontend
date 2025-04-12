@@ -1,0 +1,121 @@
+/* Services.css */
+
+/* General Styles */
+.service {
+    margin-top: 85px;
+    margin-bottom: 50px;
+  }
+  
+  .service-heading {
+    /* background-color: #fff; */
+    padding: 20px;
+  }
+  .service-img {
+   width: 100%;
+   max-width: 400px;
+    height: auto;
+  }
+  .service-heading {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #b64406;
+  }
+  
+  #services {
+    background-color: #fff;
+  }
+  
+  #services p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+  }
+  
+  #services li {
+    list-style: none;
+    font-family: "Nunito Sans", sans-serif;
+    color: #5e5e5e;
+    font-size: 18px;
+  }
+  
+  #expertise h4 {
+    font-family: "Kanit", sans-serif;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1400px) {
+    #services p {
+      font-size: 18px;
+    }
+    #services li {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .service-heading h1 {
+      font-size: 25px;
+    }
+  
+    #services p {
+      font-size: 18px;
+    }
+  
+    #services li {
+      font-size: 16px;
+    }
+  
+    .col-lg-5 img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-heading h1 {
+      font-size: 20px;
+    }
+  
+    #services p {
+      font-size: 16px;
+    }
+  
+    #services li {
+      font-size: 14px;
+    }
+  
+    .col-lg-5 img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .col-lg-7 {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service-heading h1 {
+      font-size: 18px;
+    }
+  
+    #services p {
+      font-size: 14px;
+    }
+  
+    #services li {
+      font-size: 12px;
+    }
+  
+    .col-lg-5 img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .col-lg-7 {
+      margin-top: 10px;
+    }
+  }
