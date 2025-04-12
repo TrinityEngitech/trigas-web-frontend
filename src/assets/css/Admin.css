@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.aside {
+  width: 20%;
+  height: 100vh;
+  background-color: #fefcfc;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.admin-logo {
+  padding: 20px;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+.admin-logo img {
+  width: 180px;
+}
+.adminbody {
+  width: 80%;
+  background-color: #eff1f8;
+}
+.adminbody-header {
+  background-color: #fefcfc;
+  height: 60px;
+  padding: 8px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.adminbody-header #profile a{
+  font-size: 25px;
+  color: #1f284e;
+  cursor: pointer;
+}
+#profile {
+  margin-top: 50px;
+}
+.admin-nav {
+  margin-top: 20px;
+}
+.admin-nav li {
+  padding: 15px;
+  background-color: #fefcfc;
+  border: 5px solid #fff;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  /* border: 1px solid black; */
+}
+.admin-nav li:hover {
+  background-color: #eff1f8;
+  border: 5px solid #1f284e;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+.admin-nav li a {
+  color: #1f284e;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* adminDashboard  */
+.adminbody-content {
+  /* border: 2px solid black; */
+  padding: 30px;
+}
+/* heading  */
+.admin-hed h2{
+  color: #9b070e;
+  margin-bottom: 50px;
+  font-family: "DM Serif Text", serif;
+  font-weight: 600;
+}
+/* heading  */
+
+.adminbody-content th{
+  font-family: "Jost", sans-serif;
+  /* border: 1px solid black; */
+  color: #1f284e;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+  
+}
+.adminbody-content th button {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+}
+.adminbody-content td{
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+}
+/* adminDashboard  */
+
+/* add admins  */
+.adminbody-content form {
+  background-color: #fff;
+  width: 80%;
+  padding: 30px;
+  border-radius: 10px;
+}
+.adminbody-content label{
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+}
+/* .adminbody-content button{
+  font-family: "Jost", sans-serif;
+  background-color: #1f284e;
+  color: #fff;
+  font-size: 18px;
+  border: 2px solid #1f284e;
+}
+.adminbody-content button:hover{
+  color: #1f284e;
+  border: 2px solid #1f284e;
+} */
+/* add admins  */

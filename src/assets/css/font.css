@@ -1,0 +1,183 @@
+/* subheading  */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* heading  */
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* paragraph  */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* heading  */
+.heading h1 {
+  font-family: "PT Serif", serif;
+  font-weight: 900;
+  font-size: 35px;
+}
+
+.heading #symbol {
+  color: #fa5e07;
+  font-size: 25px;
+}
+
+.heading h6 {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(87, 87, 87);
+  font-family: "Kanit", sans-serif;
+}
+
+/* paragraph  */
+p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* herosection heading */
+.heading-section {
+  background-image: url("../image/bg.JPG");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.heading-image {
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.heading-image h1 {
+  font-family: "PT Serif", serif;
+  font-weight: 600;
+}
+
+.heading-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(4, 4, 4, 0.447);
+  /* Adds a dark overlay */
+  z-index: 1;
+}
+
+#heading h1 {
+  font-size: 80px;
+  font-family: "Kanit", sans-serif;
+}
+
+#heading a {
+  font-size: 25px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#heading i {
+  font-size: 25px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* herosection heading */
+@media (max-width: 992px) {
+  .heading h1 {
+    font-size: 30px;
+  }
+
+  .heading h6 {
+    font-size: 15px;
+  }
+
+  .heading #symbol {
+    font-size: 15px;
+  }
+
+  #heading h1 {
+    font-size: 40px;
+  }
+
+  #heading a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading h1 {
+    font-size: 30px;
+  }
+
+  .heading h6 {
+    font-size: 15px;
+  }
+
+  .heading #symbol {
+    font-size: 15px;
+  }
+
+  #heading h1 {
+    font-size: 40px;
+  }
+
+  #heading a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .heading h1 {
+    font-size: 26px;
+  }
+
+  .heading h6 {
+    font-size: 15px;
+  }
+
+  .heading #symbol {
+    font-size: 15px;
+  }
+
+  #heading h1 {
+    font-size: 40px;
+  }
+
+  #heading a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading h1 {
+    font-size: 25px;
+  }
+
+  .heading h6 {
+    font-size: 15px;
+  }
+
+  .heading #symbol {
+    font-size: 15px;
+  }
+
+  #heading h1 {
+    font-size: 40px;
+  }
+
+  #heading a {
+    font-size: 18px;
+  }
+}

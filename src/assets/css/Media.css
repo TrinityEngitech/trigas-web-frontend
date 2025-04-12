@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.media {
+  margin-top: 85px;
+  margin-bottom: 50px;
+}
+
+.media-item p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+}
+
+.media-item h3 {
+  font-family: "Kanit", sans-serif;
+  color: #fa5e07;
+}
+
+.award-item p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+}
+.media-img {
+ border-right: 1px solid #d4d4d4;
+  
+}
+.nav-link {
+  font-family: "Kanit", sans-serif;
+  color: #fa5e07;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #fa5e07;
+}
+.client-img {
+  width: 200px;
+}
+/* Media Queries */
+@media (max-width: 320px) {
+  .media-item {
+    flex-direction: column;
+  }
+  .media-img {
+    border-right: none;
+  }
+  .media-item p {
+    font-size: 14px;
+  }
+  .media-item .col-sm-4 {
+    width: 100%;
+  }
+  .media-item .col-sm-8 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .media-item {
+    flex-direction: column;
+  }
+  .media-img {
+    border-right: none;
+  }
+  .media-item p {
+    font-size: 16px;
+  }
+  .media-item .col-sm-4 {
+    width: 100%;
+  }
+  .media-item .col-sm-8 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 640px) {
+  .media-item {
+    flex-direction: column;
+  }
+  .media-img {
+    border-right: none;
+  }
+  .media-item p {
+    font-size: 16px;
+  }
+  .media-item .col-sm-4 {
+    width: 100%;
+  }
+  .media-item .col-sm-8 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  
+  .media-img {
+    border-right: none;
+  }
+  .media-item p {
+    font-size: 16px;
+  }
+  .media-item .col-sm-4 {
+    width: 40%;
+  }
+  .media-item .col-sm-8 {
+    width: 0%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .media-item {
+    flex-direction: row;
+  }
+  .media-img {
+    border-right: none;
+  }
+  .media-item .col-sm-4 {
+    width: 30%;
+  }
+  .media-item .col-sm-8 {
+    width: 70%;
+  }
+}
+
+@media (min-width: 993px) {
+  .media-item {
+    flex-direction: row;
+  }
+  .media-item .col-sm-4 {
+    width: 25%;
+  }
+  .media-item .col-sm-8 {
+    width: 75%;
+  }
+}

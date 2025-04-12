@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#err-bg{
+    background-color: #1f284e;
+    height: 100vh;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/047/069/157/small_2x/royal-blue-color-rotating-box-design-geometrical-simple-background-for-presentation-free-video.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.error{
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.error h3{
+    color: #1f284e;
+    font-family: "DM Serif Text", serif;
+    font-weight: 900;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.err-btn a{
+    border: 2px solid #1f284e;
+    padding: 15px;
+    background-color: #1f284e;
+    color: #fff;
+    font-family: "DM Serif Text", serif;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.err-btn a:hover{
+    background-color: transparent;
+    color: #1f284e;
+}

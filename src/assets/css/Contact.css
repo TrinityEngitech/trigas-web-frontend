@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact {
+  margin-top: 85px;
+  margin-bottom: 50px;
+  /* border: 1px solid black; */
+}
+#since-img {
+  width: 500px;
+}
+#contact1 h5 {
+  color: #fa5e07;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#contact1 p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+}
+
+#contact1 li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+#contact1 li a {
+  /* color: rgb(50, 50, 50); */
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #fa5e07;
+  text-align: center;
+  background-color: transparent;
+  color: #5b5b5b;
+  transition: 1s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#contact1 li a:hover {
+  background-color: #fa5e07;
+  color: #fff;
+}
+
+#contact2 {
+  background: linear-gradient(
+    107deg,
+    rgb(183, 48, 2) 11.1%,
+    rgb(193, 107, 2) 95.3%
+  );
+}
+
+#contact2 p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* form  */
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Kanit", sans-serif;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #b3b3b3, #fff);
+  border-image-slice: 1;
+}
+
+/* reset input */
+.form__field {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}
+
+/* form  */
+
+/* responsive */
+@media (max-width: 640px) {
+  #since-img {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #since-img {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  #since-img {
+    display: none;
+  }
+}

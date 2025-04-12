@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.companyPage{
+    margin-top: 85px;
+    margin-bottom: 50px;
+}
+.companyPage p{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.companyPage h4{
+    color: #fa5e07;
+    font-family: "Kanit", sans-serif;
+}
+.companyPage li{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    color: rgb(59, 59, 59);
+    list-style:square;
+}

@@ -1,0 +1,127 @@
+.count{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .counter-wrapper{
+    position: relative;
+    /* border: 1px solid black; */
+    /* width: 100%; */
+    /* margin-top: 80px; */
+    /* background-color:#eff1f8; */
+    /* margin-bottom: -120px; */
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    /* border-radius: 50px 20px; */
+  }
+  .counter-wrapper:after{
+    content: '';
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+  }
+  .counter-inner{
+    position:relative;
+    z-index:2;
+  }
+  .count{
+    padding: 10px;
+  }
+  #counter{
+    color: #fff;
+    border: 1px solid #eeeeee84;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  #counter span{
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    padding: 10px;
+    font-size: 80px;
+    
+  }
+
+
+
+  /* Responsive Layout */
+  /* Media Queries */
+@media (max-width: 320px) {
+  #counter {
+    margin: 10px 0;
+  }
+  .count {
+    font-size: 30px;
+  }
+  #counter span {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  #counter {
+    margin: 10px 0;
+  }
+  .count {
+    font-size: 35px;
+  }
+  #counter span {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 640px) {
+  #counter {
+    margin: 10px 0;
+  }
+  .count {
+    font-size: 40px;
+  }
+  #counter span {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  #counter {
+    margin: 10px 0;
+  }
+  .count {
+    font-size: 45px;
+  }
+  #counter span {
+    font-size: 85px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  #counter {
+    margin: 10px 10px;
+  }
+  .count {
+    font-size: 50px;
+  }
+  #counter span {
+    font-size: 50px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  #counter {
+    margin: 10px 10px;
+  }
+  .count {
+    font-size: 50px;
+  }
+  #counter span {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1201px) {
+
+  #counter span {
+    font-size: 70px;
+  }
+}
