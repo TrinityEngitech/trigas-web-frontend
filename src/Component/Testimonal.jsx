@@ -1,7 +1,7 @@
 import c1 from "../assets/image/c1.jpg";
 import c2 from "../assets/image/c8.jpg";
 import c3 from "../assets/image/c3.jpg";
-import c4 from "../assets/image/c7.jpg";
+import c4 from "../assets/image/c4.jpg";
 import c5 from "../assets/image/c5.jpg";
 import c6 from "../assets/image/c6.jpg";
 import c7 from "../assets/image/c7.jpg";
@@ -40,11 +40,11 @@ function Testimonal() {
         slidesPerView={6} // Default view
         spaceBetween={3}
         autoplay={{
-          delay: 1500,
+          delay: 0,
           disableOnInteraction: false,
         }}
         loop={true} // Ensures continuous scrolling
-        speed={1000} // Smooth transition
+        speed={1000}
         modules={[Autoplay]}
         className="testimonialSwiper"
         breakpoints={{
@@ -70,7 +70,7 @@ function Testimonal() {
           },
         }}
       >
-        {[c1, c2, c3, c4, c5, c6, c7, c8,c9,c10 , c11 ,c12 ,c13 ,c14].map((img, index) => (
+        {[c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14].map((img, index) => (
           <SwiperSlide key={index}>
             <img src={img} alt={`Slide ${index}`} width="200" height="100" />
           </SwiperSlide>

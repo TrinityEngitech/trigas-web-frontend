@@ -10,7 +10,7 @@ import "../assets/css/Service.css";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 // img
 import s1 from "../assets/image/s1.jpeg";
-import s2 from "../assets/image/service2.png";
+import s2 from "../assets/image/s6.jpeg";
 import service3 from "../assets/image/service3.jpg";
 import s3 from "../assets/image/s3.jpeg";
 import s4 from "../assets/image/s4.jpeg";

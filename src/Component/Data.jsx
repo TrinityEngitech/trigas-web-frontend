@@ -10,44 +10,54 @@ const Data = [
     {
         id: 2,
         category: "awards",
-        name: "Safety awareness programme(SAP2023)",
-        img: "https://trigas.co.in/wp-content/uploads/2024/07/1.jpg",
+        name: "All India Rank 2 Chhotu Sales (2023–2024)",
+        img: "src/assets/image/a8.png",
     },
     {
         id: 3,
         category: "awards",
-        name: "BEST BUSSINESS ASSOCIATE – 2019 INDIAN OIL CORPORATION LIMITE",
-        img: "https://trigas.co.in/wp-content/uploads/2024/07/2.jpg",
+        name: "Highest Bulk LPG Sales -220046 MT in FY 2023 -24",
+        img: "src/assets/image/a5.png",
     },
     {
         id: 4,
         category: "awards",
         name: "Best ND Distributor-Retail & Industrial Sales 2022 -2023",
-        img: "https://trigas.co.in/wp-content/uploads/2024/07/3.jpg",
+        img: "src/assets/image/a3.png",
     },
     {
         id: 5,
         category: "awards",
-        name: "Indian oil corporation Limited 2023",
-        img: "https://trigas.co.in/wp-content/uploads/2024/07/4.jpg",
+        name: "BEST BUSSINESS ASSOCIATE – 2019 INDIAN OIL CORPORATION LIMITE",
+        img: "src/assets/image/a2.png",
     },
     {
         id: 6,
         category: "awards",
-        name: "Highest Bulk LPG Sales -220046 MT in FY 2023 -24",
-        img: "https://trigas.co.in/wp-content/uploads/2024/07/5.jpg",
+        name: "Safety awareness programme(SAP2023)",
+        img: "src/assets/image/a1.png",
     },
+    
+    
+    {
+        id: 5,
+        category: "awards",
+        name: "Indian oil corporation Limited 2023",
+        img: "src/assets/image/a4.png",
+    },
+   
+    
     {
         id: 7,
         category: "awards",
         name: "Provided by Hindustan Petroleum corporation limited",
-        img: "https://trigas.co.in/wp-content/uploads/2024/07/6.jpg",
+        img: "src/assets/image/a6.png",
     },
     {
         id: 8,
         category: "awards",
         name: "Best Performance in Bulk Sales – PROVIDED By SHELL GAS 2004",
-        img: "https://trigas.co.in/wp-content/uploads/2024/07/8-1.jpg",
+        img: "src/assets/image/a7.png",
     },
 ]
 
