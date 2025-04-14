@@ -210,8 +210,8 @@ function Home() {
                       <img src={s1} alt="" id="img-inner" />
                     </div>
                     <div className="slide-text">
-                      <p style={{ color: "#fff",fontWeight:"bolder" }}>
-                       Above Ground Propane /LPG Storage Installation
+                      <p style={{ color: "#fff", fontWeight: "bolder" }}>
+                        Above Ground Propane /LPG Storage Installation
                       </p>
                     </div>
                   </div>
@@ -223,24 +223,26 @@ function Home() {
                       <img src={s7} alt="" id="img-inner" />
                     </div>
                     <div className="slide-text">
-                      <p style={{ color: "#fff",fontWeight:"bolder"  }}>
+                      <p style={{ color: "#fff", fontWeight: "bolder" }}>
                         Mounded Propane/LPG Storage Installation
                       </p>
                     </div>
                   </div>
                 </SwiperSlide>
-                 {/* 6 */}
-                 <SwiperSlide>
+                {/* 6 */}
+                <SwiperSlide>
                   <div className="slide-content">
                     <div className="image-container">
                       <img src={s6} alt="" id="img-inner" />
                     </div>
                     <div className="slide-text">
-                      <p style={{ color: "#fff",fontWeight:"bolder"  }}>LPG Manifold Installation</p>
+                      <p style={{ color: "#fff", fontWeight: "bolder" }}>
+                        LPG Manifold Installation
+                      </p>
                     </div>
                   </div>
                 </SwiperSlide>
-               
+
                 {/* 3 */}
                 <SwiperSlide>
                   <div className="slide-content">
@@ -248,7 +250,9 @@ function Home() {
                       <img src={s3} alt="" id="img-inner" />
                     </div>
                     <div className="slide-text">
-                      <p style={{ color: "#fff",fontWeight:"bolder"  }}>Conversion Assistance</p>
+                      <p style={{ color: "#fff", fontWeight: "bolder" }}>
+                        Conversion Assistance
+                      </p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -259,7 +263,7 @@ function Home() {
                       <img src={s4} alt="" id="img-inner" />
                     </div>
                     <div className="slide-text">
-                      <p style={{ color: "#fff",fontWeight:"bolder"  }}>
+                      <p style={{ color: "#fff", fontWeight: "bolder" }}>
                         Cryogenic Storage Installation
                       </p>
                     </div>
@@ -272,23 +276,25 @@ function Home() {
                       <img src={s5} alt="" id="img-inner" />
                     </div>
                     <div className="slide-text">
-                      <p style={{ color: "#fff",fontWeight:"bolder"  }}>Green Hydrogen Solution</p>
+                      <p style={{ color: "#fff", fontWeight: "bolder" }}>
+                        Green Hydrogen Solution
+                      </p>
                     </div>
                   </div>
                 </SwiperSlide>
-                 {/* 2 */}
-                 <SwiperSlide>
+                {/* 2 */}
+                <SwiperSlide>
                   <div className="slide-content">
                     <div className="image-container">
                       <img src={s2} alt="" id="img-inner" />
                     </div>
                     <div className="slide-text">
-                      <p style={{ color: "#fff",fontWeight:"bolder"  }}>450/420 LPG Cylinder</p>
+                      <p style={{ color: "#fff", fontWeight: "bolder" }}>
+                        450/420 LPG Cylinder
+                      </p>
                     </div>
                   </div>
                 </SwiperSlide>
-                
-               
               </Swiper>
             </div>
           </div>
@@ -305,37 +311,16 @@ function Home() {
                 Join industry leaders and become a partner with TRIGAS, where we
                 drive energy forward with reliable and innovative gas solutions.
               </h1>
-              <div className="col-lg-12 d-flex flex-wrap ">
-                {/* 1 */}
-                <div className="client-img m-3">
-                  
-                  <img src={b2} alt="" width={"250px"} className="img-fulid" />
-                </div>
-                {/* 2 */}
-                <div className="client-img m-3">
-                <img src={b1} alt="" width={"250px"} className="img-fulid" />
-                </div>
-                {/* 3 */}
-                <div className="client-img m-3">
-                  <img src={b3} alt="" width={"250px"} className="img-fulid" />
-                </div>
-                {/* 4 */}
-                <div className="client-img m-3">
-                  <img src={b4} alt="" width={"250px"} className="img-fulid" />
-                </div>
-                {/* 5 */}
-                <div className="client-img m-3">
-                  <img src={b5} alt="" width={"250px"} className="img-fulid" />
-                </div>
-                {/* 6 */}
-                <div className="client-img m-3">
-                  <img src={b6} alt="" width={"250px"} className="img-fulid" />
-                </div>
-                {/* 7 */}
-                <div className="client-img m-3">
-                  <img src={b7} alt="" width={"250px"} className="img-fulid" />
-                </div>
-              </div>
+              <div className="row">
+  {[b2, b1, b3, b4, b5, b6, b7].map((img, i) => (
+    <div className="col-lg-3 col-md-4 col-sm-6 col-6 d-flex justify-content-center mb-3" key={i}>
+      <div className="client-img">
+        <img src={img} alt={`client-${i}`} className="img-fluid" />
+      </div>
+    </div>
+  ))}
+</div>
+
             </div>
           </div>
         </div>
@@ -413,10 +398,11 @@ function Home() {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      We offer comprehensive gas process solutions, including
-                      engineering & construction (EPC) of natural gas plants,
-                      expertise in LNG, Propane & LPG, safe and efficient
-                      transportation & storage, and Green Hydrogen solutions.
+                      TRIGAS specializes in Propane, LPG and LNG along with
+                      Green Hydrogen solutions. We offer end-to-end services
+                      including EPC of gas plants, transportation, and storage.
+                      Our focus is on safe, reliable, and sustainable energy
+                      delivery across industries.
                     </div>
                   </div>
                 </div>
@@ -465,7 +451,7 @@ function Home() {
                     <div class="accordion-body">
                       There are several ways to connect with us! You can fill
                       out the contact form on our website, call us directly at
-                      [Phone Number], send us an email at info@trigas.in, or
+                      +91 8866210228, send us an email at info@trigas.in, or
                       visit our corporate office in Rajkot.
                     </div>
                   </div>

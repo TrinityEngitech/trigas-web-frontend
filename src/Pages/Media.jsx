@@ -111,14 +111,18 @@ function Media() {
                 </div>
               ))}
             {selectedCategory === "awards" &&
-              awards.map((item, index) => (
-                <div key={index} className=" col-lg-3 col-md-4 col-sm-6 text-center">
-                  <div className="award-item border shadow p-2 mb-3  rounded">
-                    <img src={item.img} alt="" width={"200px"} className="img-fulid"/>
-                    <p>{item.name}</p>
-                  </div>
-                </div>
-              ))}
+  <div className="row">
+    {awards.map((item, index) => (
+      <div key={index} className="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+        <div className="award-item shadow rounded text-center p-3 w-100" style={{ maxWidth: "280px", height: "100%", border: "1px solid #ccc" }}>
+          <img src={item.img} alt={item.name} className="img-fluid mb-3" style={{ height: "200px", objectFit: "contain" }} />
+          <p className="fw-semibold">{item.name}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+}
+
           </div>
         </div>
         {/* content display */}

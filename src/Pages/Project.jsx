@@ -11,7 +11,7 @@ import Testimonal from "../Component/Testimonal";
 // icon
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import s2 from "../assets/image/s6.jpeg";
-import s1 from "../assets/image/s2.jpg";
+// import s1 from "../assets/image/s2.jpg";
 import s3 from "../assets/image/s3.jpeg";
 import s4 from "../assets/image/s4.jpeg";
 import p1 from "../assets/image/p1.jpeg";
@@ -28,19 +28,19 @@ const projects = [
   {
     id: 2,
     title: "LPG Gas Bank System",
-    image: [s1, s2],
+    image: [s2],
     description: "A secure LPG Gas Bank System with bottling plants, ensuring efficient storage, refilling, and uninterrupted supply for industrial use.",
   },
   {
     id: 3,
     title: "LNG Bulk Storage Plant",
-    image: [s4, s4], // Multiple images
+    image: [s4], 
     description: "An advanced LNG Bulk Storage Plant designed for safe, large-scale storage and efficient distribution, ensuring a reliable energy supply.",
   },
   {
     id: 4,
     title: "Secondary Pipeline Distribution System",
-    image: [s3, s3],
+    image: [s3],
     description: "An extensive Pipeline Distribution System ensuring safe and efficient gas transportation for industrial sectors.",
   },
 ];

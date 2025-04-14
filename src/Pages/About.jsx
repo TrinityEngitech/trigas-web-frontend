@@ -65,7 +65,7 @@ function About() {
                   propane, and LPG plants, as well as fuel transportation,
                   storage, and maintenance. Over the years, TRIGAS has earned a
                   trusted reputation, completing over 500 projects nationwide
-                  and over 200 plants in Gujarat alone.
+                  and over 200+ plants in Gujarat alone.
                 </p>
                 <p>
                   With a focus on sustainability, TRIGAS has pioneered tailored

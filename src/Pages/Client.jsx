@@ -55,66 +55,14 @@ function Client() {
 
         {/* a clients already join trigas  */}
         <div className="container mt-5 mb-5">
-        <div className="row">
-          <div className="col-lg-12 d-flex flex-wrap " data-aos="fade-up">
-            {/* 1 */}
-            <div className="img-wrapper col-lg-2 col-md-4 col-sm-6 col-12">
-              <img className="inner-img p-3" src={c1} />
-            </div>
-            {/* 2 */}
-            <div className="img-wrapper col-lg-2 col-md-4 col-sm-6 col-12">
-              <img className="inner-img p-3" src={c2} />
-            </div>
-            {/* 3  */}
-            <div className="img-wrapper col-lg-2 col-md-4 col-sm-6 col-12">
-              <img className="inner-img p-3" src={c3} />
-            </div>
-            {/* 4 */}
-            <div className="img-wrapper col-lg-2 col-md-4 col-sm-6 col-12">
-              <img className="inner-img p-3" src={c4} />
-            </div>
-            {/* 5 */}
-            <div className="img-wrapper col-lg-2 col-md-4 col-sm-6 col-12">
-              <img className="inner-img p-3" src={c5} />
-            </div>
-            {/* 6 */}
-            <div className="img-wrapper col-lg-2 col-md-4 col-sm-6 col-12">
-              <img className="inner-img p-3" src={c6} />
-            </div>
-            {/* 7 */}
-            <div className="img-wrapper col-lg-2 col-md-4 col-sm-6 col-12">
-              <img className="inner-img p-3" src={c7} />
-            </div>
-            {/* 8 */}
-            <div className="img-wrapper col-lg-2 col-md-4 col-sm-6 col-12">
-              <img className="inner-img p-3" src={c8} />
-            </div>
-            {/* 9 */}
-            <div className="img-wrapper col-lg-2 col-md-4 col-sm-6 col-12">
-              <img className="inner-img p-3" src={c9} />
-            </div>
-            {/* 10 */}
-            <div className="img-wrapper col-lg-2 col-md-4 col-sm-6 col-12">
-              <img className="inner-img p-3" src={c10} />
-            </div>
-            {/* 11 */}
-            <div className="img-wrapper col-lg-2 col-md-4 col-sm-6 col-12">
-              <img className="inner-img p-3" src={c11} />
-            </div>
-            {/* 12 */}
-            <div className="img-wrapper col-lg-2 col-md-4 col-sm-6 col-12">
-              <img className="inner-img p-3" src={c12} />
-            </div>
-            {/* 13 */}
-            <div className="img-wrapper col-lg-2 col-md-4 col-sm-6 col-12">
-              <img className="inner-img p-3" src={c13} />
-            </div>
-            {/* 14  */}
-            <div className="img-wrapper col-lg-2 col-md-4 col-sm-6 col-12">
-              <img className="inner-img p-3" src={c14} />
-            </div>
-          </div>
-        </div>
+        <div className="row" data-aos="fade-up">
+  {[c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14].map((img, index) => (
+    <div className="img-wrapper col-lg-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center" key={index}>
+      <img className="inner-img p-2 img-fluid" src={img} alt={`img-${index}`} />
+    </div>
+  ))}
+</div>
+
         </div>
         {/* a clients already join trigas  */}
         
@@ -129,35 +77,14 @@ function Client() {
                 Join industry leaders and become a partner with TRIGAS, where we
                 drive energy forward with reliable and innovative gas solutions.
               </h1>
-              <div className="col-lg-12 d-flex flex-wrap ">
-                {/* 1 */}
-                <div className="client-img m-3">
-                  <img src={b1} alt="" width={"250px"} className="img-fulid" />
-                </div>
-                {/* 2 */}
-                <div className="client-img m-3">
-                  <img src={b2} alt="" width={"250px"} className="img-fulid" />
-                </div>
-                {/* 3 */}
-                <div className="client-img m-3">
-                  <img src={b3} alt="" width={"250px"} className="img-fulid" />
-                </div>
-                {/* 4 */}
-                <div className="client-img m-3">
-                  <img src={b4} alt="" width={"250px"} className="img-fulid" />
-                </div>
-                {/* 5 */}
-                <div className="client-img m-3">
-                  <img src={b5} alt="" width={"250px"} className="img-fulid" />
-                </div>
-                {/* 6 */}
-                <div className="client-img m-3">
-                  <img src={b6} alt="" width={"250px"} className="img-fulid" />
-                </div>
-                {/* 7 */}
-                <div className="client-img m-3">
-                  <img src={b7} alt="" width={"250px"} className="img-fulid" />
-                </div>
+              <div className="row">
+                {[b2, b1, b3, b4, b5, b6, b7].map((img, i) => (
+                  <div className="col-lg-3 col-md-4 col-sm-6 col-6 d-flex justify-content-center mb-3" key={i}>
+                    <div className="client-img">
+                      <img src={img} alt={`client-${i}`} className="img-fluid" />
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

@@ -353,7 +353,7 @@
   }
 
   #client h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .background-section {
@@ -588,7 +588,7 @@
 
 @media (max-width: 320px) {
   .client-img img {
-    max-width: 100px;
+    max-width: 150px;
     /* Very small images for small mobile screens */
     margin: 5px;
   }

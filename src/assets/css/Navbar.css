@@ -11,6 +11,7 @@
   transition: background-color 0.3s ease-in-out;
   font-family: "Kanit", sans-serif;
   padding: 13px 20px 10px 20px;
+  background-color: #fff;
 
 }
 .nav-line {
