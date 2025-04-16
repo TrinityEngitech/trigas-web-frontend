@@ -1,4 +1,4 @@
-// package
+// packages
 import { Link } from "react-router-dom";
 // pages
 import Header from "../Component/Navbar";
