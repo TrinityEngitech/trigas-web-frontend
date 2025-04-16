@@ -176,7 +176,7 @@ function Contact() {
                     <div className="col-lg-7">
                       <h5>Office</h5>
                       <p>
-                        415, R.K. World Tower, Nr Sheetal Park Chowk, 150 ft
+                        416, R.K. World Tower, Nr Sheetal Park Chowk, 150 ft
                         Ring Road, Rajkot, Gujarat 360006. INDIA.
                       </p>
                     </div>

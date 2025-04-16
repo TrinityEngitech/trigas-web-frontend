@@ -188,7 +188,7 @@ function Footer() {
                 <div className="col-lg-3">
                   <h4>Our Location</h4>
                   <p>
-                    <FaLocationDot /> &nbsp; 415,R.k. World Tower, Nr Sheetal
+                    <FaLocationDot /> &nbsp; 416,R.k. World Tower, Nr Sheetal
                     Park Chowk, 150 ft Ring Road, Rajkot, Gujarat 360006. INDIA
                   </p>
                   <p>
