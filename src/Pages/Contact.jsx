@@ -87,7 +87,7 @@ function Contact() {
     if (validate()) {
       setIsSubmitting(true);
       axios
-        .post("http://localhost:2003/contact", formData)
+        .post("https://webapis.trigas.co.in/contact", formData)
         .then((response) => {
           console.log("Response:", response.data);
           setFormData(initial);

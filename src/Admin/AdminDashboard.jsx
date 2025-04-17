@@ -16,7 +16,7 @@ function AdminDashboard() {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const response = await axios.get("http://localhost:2003/adminDashboard");
+        const response = await axios.get("https://webapis.trigas.co.in/adminDashboard");
         setContacts(response.data);
       } catch (error) {
         console.error("Error fetching contacts:", error);
@@ -29,7 +29,7 @@ function AdminDashboard() {
   // Function to delete a single contact
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:2003/adminDashboard/${id}`);
+      await axios.delete(`https://webapis.trigas.co.in/adminDashboard/${id}`);
       setContacts(contacts.filter(contact => contact._id !== id)); // Update local state
     } catch (error) {
       console.error("Error deleting contact:", error);
