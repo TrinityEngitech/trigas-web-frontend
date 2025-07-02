@@ -30,7 +30,7 @@ function Testimonal() {
           <div className="col-lg-12">
             <div className="heading text-center">
               <h6 className="mb-4">
-                <span id="symbol">⦿</span> Featured Clientele
+                <span id="symbol">⦿</span> Proud Partnerships
               </h6>
               <h1 className="w-50 m-auto">Trusted by industry leaders</h1>
             </div>

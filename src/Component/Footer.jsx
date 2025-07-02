@@ -54,7 +54,7 @@ function Footer() {
                     <img src={logo_Black} alt="" width={"150px"} />
                   </h4>
                   <p className="mt-4 mb-4">
-                    TRIGAS is a leading EPC company for as plants Like
+                    TRIGAS is a leading EPC company for gas plants Like
                     LNG, PROPANE/LPG since 1999.
                   </p>
                   <div className="col-lg-12">
@@ -108,7 +108,7 @@ function Footer() {
                       offset={150}
                       id="Link"
                     >
-                      LPG Manofold Installation
+                      LPG Manifold Installation
                     </Link>
                   </li>
                   <li>
@@ -153,7 +153,7 @@ function Footer() {
                   </li>
                 </div>
                 <div className="col-lg-2">
-                  <h4>Qulick Links:</h4>
+                  <h4>Quick Links</h4>
                   <li>
                     <Link to="/about" target="_top" id="Link">
                       {" "}
@@ -181,14 +181,14 @@ function Footer() {
                   <li>
                     {" "}
                     <Link to="/policy" target="_top" id="Link">
-                      Privacy Policys
+                     Privacy Policies
                     </Link>
                   </li>
                 </div>
                 <div className="col-lg-3">
                   <h4>Our Location</h4>
                   <p>
-                    <FaLocationDot /> &nbsp; 415,R.k. World Tower, 150 ft Ring Road, Nr. Sheetal
+                    <FaLocationDot /> &nbsp; 415,R.K. World Tower, 150ft Ring Road, Nr. Sheetal
                     Park Bus Stop, Rajkot, Gujarat 360007. INDIA
                   </p>
                   <p>
@@ -202,7 +202,7 @@ function Footer() {
 
               <hr className="mt-4 text-dark" />
               <p className="text-center mt-3 mb-0 pb-0">
-                <TbCopyright /> Copyright 2024 TRIGAS. All Rights Reserved.
+                <TbCopyright /> Copyright © 2025 TRINITY ENGITECH - All rights reserved
               </p>
               <Whatsapp />
             </div>

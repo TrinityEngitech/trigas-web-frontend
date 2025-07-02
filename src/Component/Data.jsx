@@ -40,7 +40,7 @@ const Data = [
     {
       id: 5,
       category: "awards",
-      name: "Best Bussiness Associate – 2019 Indian Oil Corporation Limite",
+      name: "Best Bussiness Associate – 2019 Indian Oil Corporation Limited",
       img: a2,
     },
     {
@@ -64,7 +64,7 @@ const Data = [
     {
       id: 9,
       category: "awards",
-      name: "Best Performance in Bulk Sales – PROVIDED By SHELL GAS 2004",
+      name: "Best Performance in Bulk Sales – Provided By Shell Gas 2004",
       img: a7,
     },
   ];

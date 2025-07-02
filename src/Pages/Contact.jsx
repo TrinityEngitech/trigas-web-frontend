@@ -132,13 +132,13 @@ function Contact() {
         <div className="container-fulid" id="heading">
           <div className="row heading-section">
             <div className="col-lg-12 heading-image">
-              <h1 className="">Contact</h1>
+              <h1 className="">Contact Us</h1>
               <p>
                 <Link to="/">Home</Link>{" "}
                 <i>
                   <MdOutlineKeyboardArrowRight />
                 </i>
-                <Link>Contact</Link>{" "}
+                <Link>Contact Us</Link>{" "}
               </p>
             </div>
           </div>

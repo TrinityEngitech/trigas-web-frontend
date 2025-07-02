@@ -45,7 +45,7 @@ function Counter() {
                 <div className=" count">
                   <span id="count1">25</span>+
                 </div>
-                <div>Years Experiences</div>
+                <div>Years Experience</div>
               </div>
               <div className="col-lg-2 col-md-4 col-sm-6 col-12 text-center" id="counter">
                 <div className=" count">
@@ -57,13 +57,13 @@ function Counter() {
                 <div className=" count">
                   <span id="count3">500</span>+
                 </div>
-                <div>Complate Project</div>
+                <div>Complete Project</div>
               </div>
               <div className="col-lg-2 col-md-4 col-sm-6 col-12 text-center" id="counter">
                 <div className=" count">
                   <span id="count4">500</span>+
                 </div>
-                <div>Client Statifaction</div>
+                <div>Client Satisfaction  </div>
               </div>
               
             </div>
