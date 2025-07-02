@@ -54,7 +54,7 @@ function Footer() {
                     <img src={logo_Black} alt="" width={"150px"} />
                   </h4>
                   <p className="mt-4 mb-4">
-                    TRIGAS is a leading EPC company for natural gas plants Like
+                    TRIGAS is a leading EPC company for as plants Like
                     LNG, PROPANE/LPG since 1999.
                   </p>
                   <div className="col-lg-12">
@@ -188,14 +188,14 @@ function Footer() {
                 <div className="col-lg-3">
                   <h4>Our Location</h4>
                   <p>
-                    <FaLocationDot /> &nbsp; 416,R.k. World Tower, Nr Sheetal
-                    Park Chowk, 150 ft Ring Road, Rajkot, Gujarat 360006. INDIA
+                    <FaLocationDot /> &nbsp; 415,R.k. World Tower, 150 ft Ring Road, Nr. Sheetal
+                    Park Bus Stop, Rajkot, Gujarat 360007. INDIA
                   </p>
                   <p>
-                    <SiGmail /> &nbsp; info@trigas.in
+                    <SiGmail /> &nbsp; trinityengitech@gmail.com | info@trigas.in
                   </p>
                   <p>
-                    <FaPhoneAlt /> &nbsp; +91 8866210228
+                    <FaPhoneAlt /> &nbsp; +91 8866299399 | +91 8866210228
                   </p>
                 </div>
               </div>

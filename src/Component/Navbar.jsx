@@ -83,7 +83,7 @@ const Header = () => {
               </li>
               <li className="nav-item ms-2">
                 <Link className="nav-link" to="/contact" target="_top">
-                  Contacts
+                  Contact Us
                 </Link>
               </li>
             </ul>

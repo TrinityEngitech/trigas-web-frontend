@@ -87,7 +87,8 @@ function Contact() {
     if (validate()) {
       setIsSubmitting(true);
       axios
-        .post("https://webapis.trigas.co.in/contact", formData)
+        // .post("https://webapis.trigas.co.in/contact", formData)
+        .post("http://localhost:2003/contact", formData)
         .then((response) => {
           console.log("Response:", response.data);
           setFormData(initial);
@@ -176,19 +177,19 @@ function Contact() {
                     <div className="col-lg-7">
                       <h5>Office</h5>
                       <p>
-                        416, R.K. World Tower, Nr Sheetal Park Chowk, 150 ft
-                        Ring Road, Rajkot, Gujarat 360006. INDIA.
+                       415, R.k. World Tower, 150 ft Ring Road, Nr. Sheetal
+                    Park Bus Stop, Rajkot, Gujarat 360007. INDIA
                       </p>
                     </div>
 
                     <div className="col-lg-5">
                       <h5>Mail</h5>
-                      <p>info@trigas.in</p>
+                      <p> trinityengitech@gmail.com | info@trigas.in</p>
                     </div>
 
                     <div className="col-lg-7">
                       <h5>Phone</h5>
-                      <p>+91 8866210228</p>
+                      <p>+91 8866299399 | +91 8866210228</p>
                     </div>
 
                     <div className="col-lg-5">

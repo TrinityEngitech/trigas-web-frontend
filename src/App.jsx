@@ -6,9 +6,10 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { AuthProvider } from "./Admin/context/AuthContext.jsx";
 // Pages
 import Layout from "./Pages/Layout.jsx";
-
+import "../src/App.css";
 
 function App() {
+
   return (
    
        <AuthProvider>
