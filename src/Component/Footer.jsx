@@ -19,6 +19,7 @@ import { Link } from "react-router-dom";
 import logo_Black from "../assets/logo/Trigas_Black_Logo.png";
 
 function Footer() {
+  const position = [22.3023, 70.7718];
   useEffect(() => {
     setTimeout(() => {
       let banner = document.querySelector("div[role='banner']");
@@ -32,16 +33,17 @@ function Footer() {
       <div className="container-fulid">
         <div className="row">
         <div style={{ width: "100%", height: "450px", overflow: "hidden", position: "relative" }}>
-      {/* <iframe
-        src="https://www.google.com/maps/d/embed?mid=1Z23U9o1WEObMc6yN_fxQhZZr2hcLzdM&ll=22.317646500000002%2C70.76751920000001&z=20"
-        width="100%"
-        height="500px"
-        style={{ position: "absolute", top: "-67px", border: "1px solid grey" }}
-        allowFullScreen
-        loading="lazy"
-      ></iframe> */}
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.9522506573826!2d70.76475061098525!3d22.31764554218147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c90061c240ed%3A0xa1226d2b5eb48e6b!2sR%20K%20WORLD%20TOWER!5e0!3m2!1sen!2sin!4v1744290573471!5m2!1sen!2sin" width="100%"
-        height="500px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.7381971520362!2d70.7666834695692!3d22.31762519872966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cbc438eaeecd%3A0xe26a0863e7b29ea8!2sTRINITY%20ENGI%20TECH!5e0!3m2!1sen!2sin!4v1777456200775!5m2!1sen!2sin" 
+    width="100%" 
+    height="100%" 
+    style={{ border: 0 }} 
+    allowFullScreen="" 
+    loading="lazy" 
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+
+
     </div>
           <div className="col-lg-12" id="footer">
             <div className="container-fulid">
