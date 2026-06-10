@@ -5,6 +5,7 @@ import About from "./About";
 import Service from "./Service";
 import Client from "./Client";
 import Contact from "./Contact";
+import Career from "./Career";
 import Project from "./Project";
 import Media from "./Media";
 import Faq from "./Faq";
@@ -30,6 +31,7 @@ function Layout() {
         <Route path="/client" element={<Client />} />
         <Route path="/media" element={<Media />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/Career" element={<Career />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/policy" element={<Policy />} />

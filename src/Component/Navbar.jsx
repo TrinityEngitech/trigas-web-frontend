@@ -81,6 +81,11 @@ const Header = () => {
                   Media & Awards
                 </Link>
               </li>
+               <li className="nav-item ms-2">
+                <Link className="nav-link" to="/Career" target="_top">
+                 Career
+                </Link>
+              </li>
               <li className="nav-item ms-2">
                 <Link className="nav-link" to="/contact" target="_top">
                   Contact Us
