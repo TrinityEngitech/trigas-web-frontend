@@ -3,13 +3,17 @@ import React, { createContext, useContext, useState } from "react";
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(
+    localStorage.getItem("isAdminLogin") === "true"
+  );
 
   const login = () => {
+    localStorage.setItem("isAdminLogin", "true");
     setIsAuthenticated(true);
   };
 
   const logout = () => {
+    localStorage.removeItem("isAdminLogin");
     setIsAuthenticated(false);
   };
 
@@ -20,6 +24,4 @@ export const AuthProvider = ({ children }) => {
   );
 };
 
-export const useAuth = () => {
-  return useContext(AuthContext);
-};
+export const useAuth = () => useContext(AuthContext);
