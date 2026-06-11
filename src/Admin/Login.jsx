@@ -44,74 +44,48 @@ const Login = () => {
   };
 
   return (
-    <div className="login-page">
-      <div className="login-left">
-        <div className="login-overlay">
-          <h1>TRIGAS Admin Panel</h1>
-          <p>
-            Manage contact inquiries, career jobs and applications from one
-            secure dashboard.
-          </p>
-        </div>
-      </div>
-
-      <div className="login-right">
-        <div className="login-card">
-          <div className="login-logo">
-            <img src={login_logo} alt="TRIGAS" />
-          </div>
-
-          <div className="login-title">
-            <span>
-              <FaUserShield />
-            </span>
-            <h2>Admin Login</h2>
-            <p>Enter your credentials to access dashboard</p>
-          </div>
-
-          <form onSubmit={handleSubmit}>
-            <div className="login-field">
-              <label>Username</label>
-              <input
-                type="text"
-                placeholder="Enter username"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
-
-            <div className="login-field">
-              <label>Password</label>
-              <div className="password-box">
-                <input
-                  type={showPass ? "text" : "password"}
-                  placeholder="Enter password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  required
-                />
-
-                <button
-                  type="button"
-                  onClick={() => setShowPass(!showPass)}
-                >
-                  {showPass ? <FaEyeSlash /> : <FaEye />}
-                </button>
-              </div>
-            </div>
-
-            <button type="submit" className="login-btn">
-              Login
-            </button>
-
-            <div className="login-back">
-              <Link to="/">← Back to Website</Link>
-            </div>
-          </form>
-        </div>
-      </div>
+ <div className="login-page">
+  <div className="login-card">
+    <div className="login-logo">
+      <img src={login_logo} alt="TRIGAS" />
     </div>
+
+    <h2>Admin Login</h2>
+    <p>Welcome back! Login to continue.</p>
+
+    <form onSubmit={handleSubmit}>
+      <div className="login-field">
+        <label>Username</label>
+        <input
+          type="text"
+          placeholder="Enter Username"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+      </div>
+
+      <div className="login-field">
+        <label>Password</label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+      </div>
+
+      <button type="submit" className="login-btn">
+        Login
+      </button>
+
+      <div className="login-back">
+        <Link to="/">← Back to Website</Link>
+      </div>
+    </form>
+  </div>
+</div>  
   );
 };
 
