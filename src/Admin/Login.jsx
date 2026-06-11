@@ -34,7 +34,7 @@ const Login = () => {
       }).then((result) => {
         if (result.isConfirmed) {
           login(); 
-          navigate("/adminDashboard"); 
+          navigate("/dashboard"); 
         }
       });
     } else {

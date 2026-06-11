@@ -1,60 +1,54 @@
-import { Link } from "react-router-dom";
-import "../assets/css/Admin.css";
-import "../assets/js/AdminDashboard.js";
-
-// logo
-import adminLogo from "../assets/logo/Trigas_Black_Logo.png";
-
-// icon
+import React from "react";
+import AdminLayout from "./AdminLayout";
 import { FaUserCircle } from "react-icons/fa";
-import { BiSolidUserRectangle } from "react-icons/bi";
+import { MdEmail, MdAdminPanelSettings } from "react-icons/md";
 
-import { BiLogOut } from "react-icons/bi";
 function Profile() {
   return (
-    <div>
-      <div className="container-fulid">
-        <div className="row">
-          <div className="col-lg-12 d-flex">
-            <div className="aside">
-              <div className="admin-logo">
-                <img src={adminLogo} alt="" className=" img-fluid" />
-              </div>
-              <div className="admin-nav">
-                <li>
-                  <Link to="/adminDashboard">
-                    <BiSolidUserRectangle /> CONTACT INQUIRY
-                  </Link>
-                </li>
+    <AdminLayout >
+      <div className="admin-hed">
+        <h2>My Profile</h2>
+      </div>
 
-                <li>
-                  <Link to="/login">
-                    <BiLogOut /> LOGOUT
-                  </Link>
-                </li>
-              </div>
+      <div className="profile-card">
+        <div className="profile-top">
+          <div className="profile-avatar">
+            <FaUserCircle />
+          </div>
+
+          <div className="profile-info">
+            <h3>TRIGAS Admin</h3>
+            <span>Administrator</span>
+          </div>
+        </div>
+
+        <div className="profile-details">
+          <div className="profile-item">
+            <MdEmail />
+            <div>
+              <label>Email</label>
+              <p>admin@trigas.com</p>
             </div>
-            <div className="adminbody">
-              <div className="adminbody-header text-end pe-5">
-                <i id="profile">
-                  <Link to="/profile">
-                    <FaUserCircle />
-                  </Link>
-                </i>
-              </div>
-              <div className="adminbody-content">
-                <div className="admin-hed">
-                  <h2>Profile </h2>
-                </div>
-                <form action="">
-                  <h2> Hello Trigas Admin !!</h2>
-                </form>
-              </div>
+          </div>
+
+          <div className="profile-item">
+            <MdAdminPanelSettings />
+            <div>
+              <label>Role</label>
+              <p>Super Administrator</p>
             </div>
           </div>
         </div>
+
+        <div className="profile-footer">
+          <h5>Welcome to TRIGAS Admin Panel</h5>
+          <p>
+            Manage contact inquiries, career jobs, applications and website
+            content from a single dashboard.
+          </p>
+        </div>
       </div>
-    </div>
+    </AdminLayout>
   );
 }
 
