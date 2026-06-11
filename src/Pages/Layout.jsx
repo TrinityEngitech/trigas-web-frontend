@@ -14,6 +14,9 @@ import Policy from "./Policy";
 // Admin
 import Login from "../Admin/Login";
 import AdminDashboard from "../Admin/AdminDashboard";
+import AdminCareers from "../Admin/AdminCareers";
+import CareerApplications from "../Admin/CareerApplications";
+import Dashboard from "../Admin/Dashboard";
 import Profile from "../Admin/Profile";
 // Protected Route
 import ProtectedRoute from "../Admin/context/ProtectedRoute"; 
@@ -41,6 +44,29 @@ function Layout() {
           path="/adminDashboard"
           element={<ProtectedRoute element={<AdminDashboard />} />}
         />
+ <Route
+          path="/dashboard"
+          element={<ProtectedRoute element={<Dashboard />} />}
+        />
+
+<Route
+  path="/admin/careers"
+  element={<ProtectedRoute element={<AdminCareers />} />}
+/>
+
+<Route
+  path="/admin/career-applications"
+  element={<ProtectedRoute element={<CareerApplications />} />}
+/>
+<Route
+  path="/admin/dashboard"
+  element={<ProtectedRoute element={<CareerApplications />} />}
+/>
+
+<Route
+  path="/profile"
+  element={<ProtectedRoute element={<Profile />} />}
+/>
         <Route
           path="/profile"
           element={<ProtectedRoute element={<Profile />} />}

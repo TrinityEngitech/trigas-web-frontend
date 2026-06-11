@@ -11,11 +11,27 @@ import {
   MdLocationOn,
   MdGroups,
   MdAccessTime,
+  MdClose,
 } from "react-icons/md";
+
+const initialApplication = {
+  careerId: "",
+  fullName: "",
+  email: "",
+  mobile: "",
+  currentLocation: "",
+  experience: "",
+  resume: null,
+  coverLetter: "",
+};
 
 function Career() {
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [applyModal, setApplyModal] = useState(false);
+  const [selectedJob, setSelectedJob] = useState(null);
+  const [application, setApplication] = useState(initialApplication);
+  const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
     fetchCareers();
@@ -23,7 +39,7 @@ function Career() {
 
   const fetchCareers = async () => {
     try {
-      const res = await axios.get("http://localhost:2003/api/careers/website");
+      const res = await axios.get("http://localhost:2003/api/careers");
       setJobs(res.data.data || []);
     } catch (error) {
       console.log(error);
@@ -32,11 +48,74 @@ function Career() {
     }
   };
 
+  const openApplyModal = (job) => {
+    setSelectedJob(job);
+    setApplication({
+      ...initialApplication,
+      careerId: job._id,
+    });
+    setApplyModal(true);
+  };
+
+  const closeApplyModal = () => {
+    setApplyModal(false);
+    setSelectedJob(null);
+    setApplication(initialApplication);
+  };
+
+  const handleChange = (e) => {
+    const { name, value, files } = e.target;
+
+    setApplication({
+      ...application,
+      [name]: files ? files[0] : value,
+    });
+  };
+
+  const submitApplication = async (e) => {
+    e.preventDefault();
+
+    try {
+      setSubmitting(true);
+
+      const data = new FormData();
+
+      data.append("careerId", application.careerId);
+      data.append("fullName", application.fullName);
+      data.append("email", application.email);
+      data.append("mobile", application.mobile);
+      data.append("currentLocation", application.currentLocation);
+      data.append("experience", application.experience);
+      data.append("coverLetter", application.coverLetter);
+
+      if (application.resume) {
+        data.append("resume", application.resume);
+      }
+
+      const res = await axios.post(
+        "http://localhost:2003/api/career-applications",
+        data,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+
+      alert(res.data.message || "Application submitted successfully");
+      closeApplyModal();
+    } catch (error) {
+      console.log(error);
+      alert(error.response?.data?.message || "Something went wrong");
+    } finally {
+      setSubmitting(false);
+    }
+  };
   return (
     <div>
       <Header />
 
-      <div className="career-page">
+      <div className="career">
         <div className="container-fluid" id="heading">
           <div className="row heading-section">
             <div className="col-lg-12 heading-image">
@@ -119,9 +198,13 @@ function Career() {
                         </div>
                       </div>
 
-                      <a href="#apply" className="career-btn">
+                      <button
+                        type="button"
+                        className="career-btn"
+                        onClick={() => openApplyModal(job)}
+                      >
                         Apply Now
-                      </a>
+                      </button>
                     </div>
                   </div>
                 ))
@@ -139,23 +222,130 @@ function Career() {
             </div>
           </div>
         </section>
-
-        <section className="career-cta-section" id="apply">
-          <div className="container">
-            <div className="career-cta-box">
-              <h2>Interested in working with us?</h2>
-              <p>
-                Send your resume to our team and we will contact you when a
-                suitable opportunity is available.
-              </p>
-              <a href="mailto:info@trigas.in" className="career-cta-btn">
-                Send Resume
-              </a>
-            </div>
-          </div>
-        </section>
       </div>
 
+      {applyModal && (
+        <div className="career-modal-overlay">
+          <div className="career-modal">
+            <div className="career-modal-header">
+              <div>
+                <h3>Apply for {selectedJob?.jobTitle}</h3>
+                <p>{selectedJob?.department}</p>
+              </div>
+
+              <button type="button" onClick={closeApplyModal}>
+                <MdClose />
+              </button>
+            </div>
+
+            <form onSubmit={submitApplication}>
+              <div className="row">
+                <div className="col-lg-6 mb-3">
+                  <input
+                    type="text"
+                    name="fullName"
+                    placeholder="Full Name"
+                    value={application.fullName}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
+                <div className="col-lg-6 mb-3">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    value={application.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
+                <div className="col-lg-6 mb-3">
+                  <input
+                    type="text"
+                    name="mobile"
+                    placeholder="Mobile Number"
+                    value={application.mobile}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
+                <div className="col-lg-6 mb-3">
+                  <input
+                    type="text"
+                    name="currentLocation"
+                    placeholder="Current Location"
+                    value={application.currentLocation}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
+                <div className="col-lg-6 mb-3">
+                  <input
+                    type="text"
+                    name="experience"
+                    placeholder="Experience e.g. 3 Years"
+                    value={application.experience}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
+                <div className="col-lg-6 mb-3">
+                  <input
+                    type="file"
+                    name="resume"
+                    accept=".pdf,.doc,.docx"
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
+                <div className="col-lg-12 mb-3">
+                  <textarea
+                    name="coverLetter"
+                    placeholder="Cover Letter"
+                    rows="4"
+                    value={application.coverLetter}
+                    onChange={handleChange}
+                  ></textarea>
+                </div>
+
+                <div className="col-lg-12">
+                  <button
+                    type="submit"
+                    className="career-modal-submit"
+                    disabled={submitting}
+                  >
+                    {submitting ? "Submitting..." : "Submit Application"}
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+      <section className="career-cta-section">
+        <div className="container">
+          <div className="career-cta-box">
+            <h2>Have Questions About Career Opportunities?</h2>
+
+            <p>
+              Our team is here to help. Get in touch with us to learn more about
+              current openings, recruitment process, and career growth opportunities
+              at TRIGAS.
+            </p>
+
+            <Link to="/contact" className="career-cta-btn">
+              Contact Us
+            </Link>
+          </div>
+        </div>
+      </section>
       <Footer />
     </div>
   );
